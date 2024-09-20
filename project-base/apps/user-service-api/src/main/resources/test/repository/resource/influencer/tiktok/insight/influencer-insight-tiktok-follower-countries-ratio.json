@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "name": "Japan",
+      "rate": 99.23
+    },
+    {
+      "name": "Germany",
+      "rate": 0.23
+    },
+    {
+      "name": "England",
+      "rate": 1.23
+    },
+    {
+      "name": "Ireland",
+      "rate": 0.23
+    }
+  ]
+}

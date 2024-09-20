@@ -1,0 +1,18 @@
+{
+  "total": 1,
+  "items": [
+    {
+      "castIsActive": 1,
+      "castSocialProviderIsActive": 1,
+      "appServices": [3],
+      "castSocialProviderId": "01hw5wd2mjrvahhyrbkx7vkte8",
+      "castId": "01hw4wh535qr4s4g9csc0vfcch",
+      "authId": "auth0|1234567890",
+      "socialProviderType": 1,
+      "isActive": 1,
+      "createdAt": "2024-04-23T16:08:11+09:00",
+      "updatedAt": "2024-04-23T16:08:11+09:00",
+      "deletedAt": null
+    }
+  ]
+}

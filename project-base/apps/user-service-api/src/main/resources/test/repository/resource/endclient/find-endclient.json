@@ -1,0 +1,15 @@
+{
+  "endclientId": "87b0f9ea-9e7e-11ec-974e-064c6d714709",
+  "companyName": "株式会社呉",
+  "name": "呉テスト",
+  "tel": "11111111111",
+  "isTerms": 1,
+  "endclientPlan": {
+    "plan": 5,
+    "planName": "プレミアムプラン（六ヶ月）",
+    "planDateFrom": "2023-03-19",
+    "constractDateFrom": "2023-03-20",
+    "constractDateTo": "2024-12-31",
+    "enable": 1
+  }
+}

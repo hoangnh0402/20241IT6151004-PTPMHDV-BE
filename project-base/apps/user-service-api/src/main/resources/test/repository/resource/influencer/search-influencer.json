@@ -1,0 +1,48 @@
+{
+  "total": 2,
+  "items": [
+    {
+      "influencerId": "094985a8-857a-11ec-848a-065dcdf82011",
+      "authId": "604ad819e267e30069bf4acd",
+      "gender": 1,
+      "age": 19,
+      "birthday": "2000-01-13",
+      "mailAddress": "test+a@example.com",
+      "prefecture": {
+        "prefectureId": 27,
+        "prefectureName": "大阪府"
+      },
+      "lineStatus": 1,
+      "termsStatus": 1,
+      "noticeType": 2,
+      "bankStatus": 1,
+      "auditStatus": 2,
+      "addressStatus": 1,
+      "isActive": 1,
+      "scouterInviteCode": null,
+      "createdAt": "2021-03-12T11:55:21+09:00",
+      "updatedAt": "2023-11-21T13:40:57+09:00"
+    },
+    {
+      "influencerId": "037728f4-f981-11eb-a331-06f158744d7f",
+      "authId": "19",
+      "gender": "1",
+      "age": 45,
+      "birthday": "2000-07-07",
+      "mailAddress": "test+b@example.com",
+      "prefecture": {
+        "prefectureId": 27,
+        "prefectureName": "大阪府"
+      },
+      "lineStatus": 1,
+      "termsStatus": 1,
+      "noticeType": 3,
+      "bankStatus": 0,
+      "addressStatus": 1,
+      "isActive": 1,
+      "scouterInviteCode": "r7hw42sn",
+      "createdAt": "2022-01-04T18:16:19+09:00",
+      "updatedAt": "2022-01-04T18:25:29+09:00"
+    }
+  ]
+}

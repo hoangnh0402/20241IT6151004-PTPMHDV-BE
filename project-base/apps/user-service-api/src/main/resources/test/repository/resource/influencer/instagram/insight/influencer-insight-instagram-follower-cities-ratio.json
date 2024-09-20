@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Tokyo",
+      "rate": 99.23
+    },
+    {
+      "name": "Osaka",
+      "rate": 1.23
+    },
+    {
+      "name": "Suita",
+      "rate": 0.23
+    },
+    {
+      "name": "Kadoma",
+      "rate": 0.23
+    },
+    {
+      "name": "Wakayama",
+      "rate": 0.23
+    },
+    {
+      "name": "Kyoto",
+      "rate": 0.23
+    },
+    {
+      "name": "Kusatsu",
+      "rate": 0.23
+    }
+  ]
+}

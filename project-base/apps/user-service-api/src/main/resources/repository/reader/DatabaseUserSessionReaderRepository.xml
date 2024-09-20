@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+        namespace="com.hit.user_service_api.infrastructure.repository.database.session.reader.user.DatabaseUserSessionReaderRepository">
+
+    <resultMap id="findResultMap"
+               type="com.hit.base_service_api.domain.entity.user.User">
+        <association property="id"
+                     javaType="com.hit.base_service_api.domain.object.user.UserId">
+            <constructor>
+                <idArg column="id" javaType="String"/>
+            </constructor>
+        </association>
+        <association property="fullName"
+                     javaType="com.hit.base_service_api.domain.object.user.FullName">
+            <constructor>
+                <idArg column="fullName" javaType="String"/>
+            </constructor>
+        </association>
+        <association property="username"
+                     javaType="com.hit.base_service_api.domain.object.user.Username">
+            <constructor>
+                <idArg column="username" javaType="String"/>
+            </constructor>
+        </association>
+        <association property="email"
+                     javaType="com.hit.base_service_api.domain.object.user.Email">
+            <constructor>
+                <idArg column="email" javaType="String"/>
+            </constructor>
+        </association>
+        <association property="address"
+                     javaType="com.hit.base_service_api.domain.object.user.Address">
+            <constructor>
+                <idArg column="address" javaType="String"/>
+            </constructor>
+        </association>
+        <association property="isActive"
+                     javaType="com.hit.base_service_api.domain.object.IsActive">
+            <constructor>
+                <idArg column="isActive" javaType="boolean"/>
+            </constructor>
+        </association>
+    </resultMap>
+
+    <resultMap id="searchResultMap" type="com.hit.base_service_api.domain.entity.user.User">
+        <association property="id"
+                     javaType="com.hit.base_service_api.domain.object.user.UserId">
+            <constructor>
+                <idArg column="id" javaType="String"/>
+            </constructor>
+        </association>
+        <association property="fullName"
+                     javaType="com.hit.base_service_api.domain.object.user.FullName">
+            <constructor>
+                <idArg column="fullName" javaType="String"/>
+            </constructor>
+        </association>
+        <association property="username"
+                     javaType="com.hit.base_service_api.domain.object.user.Username">
+            <constructor>
+                <idArg column="username" javaType="String"/>
+            </constructor>
+        </association>
+        <association property="email"
+                     javaType="com.hit.base_service_api.domain.object.user.Email">
+            <constructor>
+                <idArg column="email" javaType="String"/>
+            </constructor>
+        </association>
+        <association property="address"
+                     javaType="com.hit.base_service_api.domain.object.user.Address">
+            <constructor>
+                <idArg column="address" javaType="String"/>
+            </constructor>
+        </association>
+        <association property="isActive"
+                     javaType="com.hit.base_service_api.domain.object.IsActive">
+            <constructor>
+                <idArg column="isActive" javaType="boolean"/>
+            </constructor>
+        </association>
+    </resultMap>
+
+    <select id="find" resultMap="findResultMap">
+        SELECT
+            u.id        AS id,
+            u.full_name AS fullName,
+            u.username  AS username,
+            u.email     AS email,
+            u.address   AS address,
+            u.is_active AS isActive
+        FROM
+            users u
+        WHERE
+            u.id = #{user.id.value}
+            AND u.is_active = #{user.isActive.value}
+    </select>
+
+    <select id="searchCount" resultType="java.lang.Long">
+        SELECT
+            COUNT(1)
+        FROM
+            users u
+        WHERE
+            1 = 1
+            <if test="users.ids != null and users.ids.size != 0">
+                AND u.id IN
+                <foreach collection="users.ids" item="id" open="(" close=")" separator=",">
+                    #{id.value}
+                </foreach>
+            </if>
+            <if test="users.isActive != null">
+                AND u.is_active = #{users.isActive.value}
+            </if>
+            <if test="users.keyword != null and users.keyword.value != null and users.keyword.value != ''">
+                AND (
+                    u.full_name LIKE CONCAT('%', #{users.keyword.value}, '%')
+                    OR u.username LIKE CONCAT('%', #{users.keyword.value}, '%')
+                    OR u.email LIKE CONCAT('%', #{users.keyword.value}, '%')
+                    OR u.address LIKE CONCAT('%', #{users.keyword.value}, '%')
+                )
+            </if>
+    </select>
+
+    <select id="search" resultMap="searchResultMap">
+        SELECT
+            u.id        AS id,
+            u.full_name AS fullName,
+            u.username  AS username,
+            u.email     AS email,
+            u.address   AS address,
+            u.is_active AS isActive
+        FROM
+            users u
+        WHERE
+            1 = 1
+            <if test="users.ids != null and users.ids.size != 0">
+                AND u.id IN
+                <foreach collection="users.ids" item="id" open="(" close=")" separator=",">
+                    #{id.value}
+                </foreach>
+            </if>
+            <if test="users.isActive != null">
+                AND u.is_active = #{users.isActive.value}
+            </if>
+            <if test="users.keyword != null and users.keyword.value != null and users.keyword.value != ''">
+                AND (
+                    u.full_name LIKE CONCAT('%', #{users.keyword.value}, '%')
+                    OR u.username LIKE CONCAT('%', #{users.keyword.value}, '%')
+                    OR u.email LIKE CONCAT('%', #{users.keyword.value}, '%')
+                    OR u.address LIKE CONCAT('%', #{users.keyword.value}, '%')
+                )
+            </if>
+        <if test="pagination.hasSort() == true">
+            ORDER BY ${pagination.sortBy.value} ${pagination.sortType.value}
+        </if>
+        <if test="pagination.hasRange() == true">
+            LIMIT #{pagination.limit} OFFSET #{pagination.offset}
+        </if>
+    </select>
+
+</mapper>

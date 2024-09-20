@@ -1,0 +1,62 @@
+{
+	"total": 3,
+	"items": [
+		{
+			"id": 3,
+			"type": "画像",
+			"typeId": "20ec12855ff490c51e76a92640b185a78cdc753597c025e39cb20803bf72644778723817bca204d90d3267fa31651275d7628e3359d907b69bc486baa0d0f8c7",
+			"theme": "画面 - 中央画像",
+			"themeId": "af3547085b8f6fe2655bdcb1cbaf00aa726cda812ebc8ef0b8ebba02ab766731cda4ceba73a029c1cf0b9d197b023e0c1e1ed310e5183a141e1438099301f11f",
+			"name": "2021年夏/キャンペーン/女性画像/01",
+			"status": 0,
+			"createdAt": "2021-05-01T00:00:00Z",
+			"updatedAt": "2021-05-08T00:00:00Z",
+			"summary": {
+				"date": "2021-05-15T00:00:00Z",
+				"impression": 0,
+				"click": 0,
+				"clickRate": 0.0,
+				"conversion": 0,
+				"conversionRate": 0.0
+			}
+		},
+		{
+			"id": 2,
+			"type": "画像 + フォーム",
+			"typeId": "83284fea4a4f0183bbeb176807c060f9c9894ea8f6d31a6840c13d6988ac602549c27090b7ccb1880ae1ee769cbc9fe4d554bd1d1769c02e5ae29a929efbaa7c",
+			"theme": "画面 - 右下",
+			"themeId": "f6accede4b17c37284a2ee3aaa60f7347855b43e134929312d6832c846dd1f1012c94d1431dbb271fde2aeb722fae5d2b0fbe71b48bc3acb726ba653e60c53c7",
+			"name": "2021年4月/キャンペーン/商品アンケート/01",
+			"status": 1,
+			"createdAt": "2021-03-21T00:00:00Z",
+			"updatedAt": "2021-03-23T00:00:00Z",
+			"summary": {
+				"date": "2021-05-15T00:00:00Z",
+				"impression": 3126,
+				"click": 125,
+				"clickRate": 0.0399872041,
+				"conversion": 38,
+				"conversionRate": 0.01215611004
+			}
+		},
+		{
+			"id": 1,
+			"type": "画像",
+			"typeId": "d80edb11e73eff844b95890f68fcc8ece2ec861a1f233830d481f60b4698f5583d26b2cf36857c4371da26a66a98c279dfd10a3b46f16c5f5bd2d0e9b0c00c20",
+			"theme": "画面 - 右下",
+			"themeId": "1d0c46a6cb0869e1c49dea2b4ea9265c3ca59051568a6dde8ff1ba76fe718c11eac1551e12e4a2ee638ad2cf8d09ff53e3ea68ab1db811a4c37774681d1a1c22",
+			"name": "2020年1Q/キャンペーン/ウェビナーバナー画像/1-3月通し",
+			"status": 1,
+			"createdAt": "2019-12-15T00:00:00Z",
+			"updatedAt": "2021-12-21T00:00:00Z",
+			"summary": {
+				"date": "2021-05-15T00:00:00Z",
+				"impression": 15613,
+				"click": 2138,
+				"clickRate": 0.13693716774,
+				"conversion": 621,
+				"conversionRate": 0.03977454685
+			}
+		}
+	]
+}

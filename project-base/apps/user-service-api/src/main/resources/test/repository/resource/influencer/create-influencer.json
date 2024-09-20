@@ -1,0 +1,15 @@
+{
+	"demogra" : {
+		"gender": 1
+	}
+	, "influencer" : {
+		"mailAddress": "test@test.com"
+		,"password": "password"
+		,"prefecture": {"prefectureId" : 1}
+	}
+        
+    ,"categories": [
+        {"categoryId": 1},
+        {"categoryId": 2}
+    ]
+}

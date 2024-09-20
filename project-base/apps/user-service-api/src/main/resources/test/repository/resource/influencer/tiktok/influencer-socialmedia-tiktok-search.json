@@ -1,0 +1,25 @@
+{
+	"total": 1,
+	"items": [
+		{
+			"influencerId": "481d3cbe-097f-11ed-b0a3-06f85e613f71",
+			"mediaId": "sho.im.dev",
+			"accessToken": "act.2tbCst5xAP7nPGjsk1CRba4ZJi8zhce0vavSykLcPxno633fPgtpof4i5b6T!5289.va",
+			"refreshToken": "rft.yIk1EZbfnng46wRSxh4xmN8XneAgvqU4z5LwehP8eTVNgRZwHVqDkeB7iA2T!5342",
+			"expiresIn": "86400",
+			"refreshExpiresIn": "30504352",
+			"openId": "_000QLqt0E8T4YsUFvwp7eQjIzvPigYwSq3M",
+			"unionId": "3af67496-eb5c-5a99-ada5-43db93ff0dbb",
+			"profileImageUrl": "https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/7777522d4ce04359dbc4b5c1eb4f38e1~c5_168x168.jpeg?x-expires=1700640000&x-signature=H2aSFkO3AeOmAR4woNbhpBvZS5w%3D",
+			"profileImageUrlSmall": "https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/7777522d4ce04359dbc4b5c1eb4f38e1.jpeg?x-expires=1700640000&x-signature=l6zYYjkmXcVg4%2BuFMe1kkgDdUOE%3D",
+			"profileImageUrlLarge": "https://p16-sign-sg.tiktokcdn.com/aweme/1080x1080/tos-alisg-avt-0068/7777522d4ce04359dbc4b5c1eb4f38e1.jpeg?x-expires=1700640000&x-signature=wXDjMEGTLVGBUPJUFvJa%2B%2B3ibCQ%3D",
+			"displayName": "Sho",
+			"bioDescription": "開発用",
+			"profileDeepLink": "https://vm.tiktok.com/ZMjEeXVBp/",
+			"status": 1,
+			"isActive": 1,
+			"createdAt": "2023-08-31T11:24:53+09:00",
+			"updatedAt": "2023-11-20T17:00:23+09:00"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+  "influencerId": "bae62f8a-cc89-11ed-8b02-063468864ef3",
+  "authId": "auth0|123456789",
+  "mailAddress": "test+c@example.com",
+  "birthday": "2000-01-13",
+  "prefecture": {
+    "prefectureId": 27,
+    "prefectureName": "大阪府"
+  }
+}

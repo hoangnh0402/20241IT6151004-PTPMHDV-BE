@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "generationType": 1,
+      "maleRate": 90.77,
+      "femaleRate": 10.23
+    },
+    {
+      "generationType": 2,
+      "maleRate": 90.77,
+      "femaleRate": 10.23
+    },
+    {
+      "generationType": 3,
+      "maleRate": 90.77,
+      "femaleRate": 10.23
+    },
+    {
+      "generationType": 4,
+      "maleRate": 90.77,
+      "femaleRate": 10.23
+    },
+    {
+      "generationType": 5,
+      "maleRate": 90.77,
+      "femaleRate": 10.23
+    }
+  ]
+}
